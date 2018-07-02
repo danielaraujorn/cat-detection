@@ -91,7 +91,7 @@ function detectFromFiles(files) {
     img.onload = function() {
       detectImage(img);
     }
-    $("#progress").text("loading image...");
+    $("#progress").text("carregando imagem...");
     img.src = e.target.result;
   };
 
@@ -133,7 +133,7 @@ var detector = {
   },
 
   detectCats: function() {
-    $("#progress").text("detecting cats...");
+    $("#progress").text("detectando gatos...");
 
     var canvas = $("#preview").get(0);
 
@@ -154,8 +154,8 @@ var detector = {
   },
 
   paintCats : function(rects) {
-    var noun = rects.length == 1 ? "cat" : "cats";
-    $("#progress").text(rects.length + " " + noun + " detected");
+    var noun = rects.length == 1 ? "gato" : "gatos";
+    $("#progress").text(rects.length + " " + noun + " detectados");
 
     this.clearRects();
     this.paintRects(rects, "red");
@@ -197,6 +197,6 @@ var detector = {
   showProgress : function(progress) {
     console.log(progress);
     this.paintRects(progress.rects, "orange");
-    $("#progress").text("detecting at " + progress.size + "px...");
+    $("#progress").text("detectando com " + progress.size + "px...");
   }
 }
