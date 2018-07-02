@@ -1,0 +1,51 @@
+
+<html>
+<head>
+  <link rel="stylesheet" href="http://harthur.github.io/kittydar/index.css"/>
+
+  <script src="jquery.js"></script>
+  <script src="demo.js"></script>
+  <script src="kittydar-0.1.6.js"></script>
+</head>
+<body>
+  <div id="container">
+    <header>
+      <div id="subtitle">
+        detecção de gatos
+      </div>
+    </header>
+    <div id="viewer-container">
+      <div id="viewer">
+        <div id="droparea-text">
+          Drag an image here to find cats.
+        </div>
+        <canvas id="preview">
+        </canvas>
+        <canvas id="annotations">
+        </canvas>
+      </div>
+
+      <div id="example-chooser">
+        <div id="thumbs">
+          <img class="example-thumb" src="http://harthur.github.io/kittydar/images/cat1.jpg"></img>
+          <img class="example-thumb" src="http://harthur.github.io/kittydar/images/cat2.jpg"></img>
+          <img class="example-thumb" src="http://harthur.github.io/kittydar/images/cat3.jpg"></img>
+          <img class="example-thumb" src="http://harthur.github.io/kittydar/images/cat4.jpg"></img>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="progress">
+  </div>
+
+  <footer>
+    <div id="select-button">
+      test images
+    </div>
+  </footer>
+
+  <div id="drawing" hidden=true>1</div>
+
+</body>
+</html>
